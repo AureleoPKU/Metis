@@ -41,10 +41,10 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 @dataclass
 class FinetuneConfig:
     # Directory Paths
-    data_root_dir: Path = Path("/share/project/fyk/dataset/real")     # Path to Open-X dataset directory
+    data_root_dir: Path = Path("/share/project/fyk/dataset/real")     # Path to dataset directory
 
-    vla_path: str = "/share/project/fyk/UniDex/vla-scripts/hf_ckpt/RQ_HandLatentActionModel_LAM_lw_action_decoder_chunk32_new_step-065000-epoch-09-loss-0.7056"            # Path to your local Metis path
-    motion_dynamics_path: str = "/share/project/fyk/UniDex/ckpt/rq_lam_chunk32/epoch=2-step=300000.ckpt"
+    vla_path: str = "/share/project/fyk/METIS/vla-scripts/hf_ckpt/RQ_HandLatentActionModel_LAM_lw_action_decoder_chunk32_new_step-065000-epoch-09-loss-0.7056"            # Path to your local Metis path
+    motion_dynamics_path: str = "/share/project/fyk/METIS/ckpt/rq_lam_chunk32/epoch=2-step=300000.ckpt"
     # vla_path: str = "local METIS path"
     # motion_dynamics_path: str = "Motion Dynamics Model path"
 
@@ -85,8 +85,8 @@ class FinetuneConfig:
                                                                     #   => CAUTION: Reduces memory but hurts performance
 
     # Tracking Parameters
-    wandb_project: str = "fientune-dexgarment"                          # Name of W&B project to log to (use default!)
-    wandb_entity: str = "aureleo"                              # Name of entity to log under
+    wandb_project: str = "METIS-fientune"                          # Name of W&B project to log to (use default!)
+    wandb_entity: str = "your_wandb_entity"                              # Name of entity to log under
     run_id_note: Optional[str] = None                               # Extra note for logging, Weights & Biases
 
 

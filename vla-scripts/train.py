@@ -58,7 +58,7 @@ class TrainConfig:
     window_size: int = 32
 
     data_root_dir: Path = Path(                                     # Path to lerobot cot dataset directory
-        "/share/project/fyk/dataset/egorlds"
+        "path/to/egoatlas/"
     )
     run_root_dir: Path = Path("runs")                               # Path to directory to store logs & checkpoints
 
@@ -76,12 +76,12 @@ class TrainConfig:
     seed: int = 23                                                  # Random seed (for reproducibility)
 
     # HF Hub Credentials (for any gated models)
-    hf_token: Union[str, Path] = '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'
+    hf_token: Union[str, Path] = 'your_hf_token'
 
     # Tracking Parameters
     trackers: Tuple[str, ...] = ("jsonl", "wandb")                  # Trackers to initialize (if W&B, add config!)
-    wandb_project: str = "latent-action-pretrain"                   # Name of W&B project to log to (use default!)
-    wandb_entity: str = "aureleo"                              # Name of entity to log under
+    wandb_project: str = "METIS-pretrain"                   # Name of W&B project to log to (use default!)
+    wandb_entity: str = "your_wandb_entity"                              # Name of entity to log under
 
     def __post_init__(self) -> None:
         """Lift optimization parameters from `self.vla` for ease of use =>> validate on `expected_world_size`"""
