@@ -28,7 +28,7 @@ METIS is a foundation model pre-trained on multi-source egocentric datasets, dem
 git clone https://github.com/FlagOpen/RoboBrain_Dex
 conda create -n metis python=3.10 -y
 conda activate metis
-# Our experiments are conducted with 'torch 2.12.0'
+# Our experiments are conducted with 'torch 2.2.0'
 
 pip install -e .
 
