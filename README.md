@@ -8,9 +8,9 @@
 <!--[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE) -->
 </div>
 
-<div align="center">
+<!-- <div align="center">
   <img src="assets/rbdex_github.gif" width="100%" alt="Robobrain-Dex">
-</div>
+</div> -->
 
 METIS is a foundation model pre-trained on multi-source egocentric datasets, demonstrating exceptional capabilities in dexterous manipulation.
 
