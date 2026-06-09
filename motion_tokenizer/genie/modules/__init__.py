@@ -1,0 +1,1 @@
+from motion_tokenizer.genie.modules.motion_tokenizer import RQ_HandLatentActionModel
