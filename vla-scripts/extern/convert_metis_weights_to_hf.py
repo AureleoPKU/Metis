@@ -31,7 +31,7 @@ class HFConvertConfig:
     )
 
     # HF Hub Credentials (required for Gated Models like LLaMa-2)
-    hf_token: Union[str, Path] = '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'                                     # Environment variable or Path to HF Token
+    hf_token: Union[str, Path] = 'your_hf_token'                                     # Environment variable or Path to HF Token
     lamtype: str = "RQ_HandLatentActionModel"
     codebook_size: int = 16                                             # Latent action codebook size                                             
     motion_codebook_size: int = 512
