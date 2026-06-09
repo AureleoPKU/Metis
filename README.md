@@ -54,13 +54,13 @@ python build_rlds_from_g1_state_action.py --input_root [input_root] --task_name 
 
 After converting to RLDS, register the dataset (which, for example, pour_the_drink) with our dataloader by adding an entry for it in configs.py ([here](metis/vla/datasets/rlds/oxe/configs.py#L192)), transforms.py ([here](metis/vla/datasets/rlds/oxe/transforms.py#L1034)). For reference, in each of these files, there are sample entries for the G1 datasets that we used in our paper.
 
-## METIS Motion Dynamics Train
+## METIS Motion Dynamics Training
 ```bash
 cd motion_tokenizer
 torchrun --standalone --nnodes 1 --nproc-per-node 1 main.py fit --config config/motion_tokenizer.yaml 2>&1 | tee motion_tokenizer.log
 ```
 
-## METIS Pretrain (Optional)
+## METIS Pretraining (Optional)
 
 The VLA backbone is initialized from [prism-dinosiglip-224px+7b](https://huggingface.co/TRI-ML/prismatic-vlms/tree/main/prism-dinosiglip-224px%2B7b) in the [Prismatic VLM](https://huggingface.co/TRI-ML/prismatic-vlms) family.
 
@@ -82,7 +82,7 @@ torchrun  --nproc-per-node 8 --nnodes 2 --node_rank 1 --master_addr 172.24.242.1
 ```
 
 
-## METIS Posttrain
+## METIS Posttraining
 ```bash
 #download pretrained model
 hf auth login
