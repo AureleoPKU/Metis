@@ -110,7 +110,7 @@ cd vla-scripts
 torchrun --standalone --nnodes 1 --nproc-per-node 1 deploy_server.py --pretrained_checkpoint "/path/to/metis-checkpoint" --dataset_name "pour_the_drinks_into_the_glass"
 ```
 
-## Deploy Server
+## Adaptation to the RoboBrain-3B Backbone
 We adapt METIS to the RoboBrain-3B backbone. Please refer to [Robobrain-Dex](https://github.com/FlagOpen/RoboBrain_Dex) for more details.
 
 <div align="center">
