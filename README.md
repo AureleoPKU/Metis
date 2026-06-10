@@ -16,7 +16,7 @@ METIS is a foundation model pre-trained on multi-source egocentric datasets, dem
 
 ## Architecture
 ![image description](assets/architecture.png)
-(a) We construct an expressive yet compact representation to capture the dynamics in dexterous manipulation. (b) METIS is pretrained on multi-source EgoAtlas dataset, where human and robot actions are align under a unified action space. (c) METIS integrates reasoning and acting within a framework, enabling effective deployment to downstream tasks.
+(a) We construct an expressive yet compact representation to capture the dynamics in dexterous manipulation. (b) METIS is pretrained on multi-source EgoAtlas dataset, where human and robot actions are aligned under a unified action space. (c) METIS integrates reasoning and acting within a framework, enabling effective deployment to downstream tasks.
 
 ### :fire: Highlights
 - A multi-source egocentric manipulation dataset EgoAtlas, integrating diverse data sources under a unified state-action space. 
